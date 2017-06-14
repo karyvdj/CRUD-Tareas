@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>CRUD Tareas</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+  <body>
+    <h1>Lista de Tareas</h1>
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+      + Agregar tarea
+    </button>
+
+    <table class="table table-striped">
+      <thead>
+        <th>Nombre</th>
+        <th>Estado</th>
+      </thead>
+      <tbody id="tasks-list">  </tbody>
+    </table>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <form action="" id="add-form" >
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Nueva tarea</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                  <label for="nombre-tarea">Nombre tarea:</label>
+                  <input type="text" class="form-control" id="nombre-tarea" placeholder="Tarea">
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+              <button type="submit" class="btn btn-primary" >+ Agregar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+</html>
