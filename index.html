@@ -20,7 +20,7 @@
       <th>Acciones</th>
     </thead>
     <tbody id="tasks-list">
-      
+
     </tbody>
   </table>
 
@@ -49,7 +49,7 @@
     </div>
 
     <!-- SMALL MODAL -->
-    <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" >
+    <div class="modal fade bs-example-modal-sm" id="modalInfo"  tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" >
       <div class="modal-dialog modal-sm" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -57,7 +57,10 @@
             <h4 class="modal-title">Descripción de Tarea</h4>
           </div>
           <div class="modal-body">
-            <p>Tarea 1</p>
+            <h5>Nombre: <span><small id="nombre"> </small> </span> </h5>
+            <h5>id: <span><small id="id"> </small> </span></h5>
+            <h5>Fecha: <span><small id="fecha"> </small> </span> </h5>
+            <h5>Estado: <span><small id="estado"> </small> </span></h5>
           </div>
         </div>
       </div>
